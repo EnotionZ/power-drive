@@ -3,10 +3,17 @@
     "name": "Power Drive",
     "description": "Power features for Google Drive",
     "version": "1.0",
+    "permissions": [
+        "https://drive.google.com/*"
+    ],
     "background": {
         "scripts": ["background.js"]
     },
-    "permissions": [
-        "https://drive.google.com"
+    "content_scripts": [
+        {
+            "matches": ["https://drive.google.com/*"],
+            "js": ["content_script.js"],
+            "run_at": "document_idle"
+        }
     ]
 }
