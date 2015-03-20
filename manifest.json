@@ -12,7 +12,10 @@
     "content_scripts": [
         {
             "matches": ["https://drive.google.com/*"],
-            "js": ["content_script.js"],
+            "js": [
+                "lib/zepto.min.js",
+                "content_script.js"
+            ],
             "run_at": "document_idle"
         }
     ]
