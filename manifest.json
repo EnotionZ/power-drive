@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Power Drive",
+    "description": "Power features for Google Drive",
+    "version": "1.0",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "https://drive.google.com"
+    ]
+}
